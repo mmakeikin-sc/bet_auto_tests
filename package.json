@@ -1,0 +1,32 @@
+{
+  "name": "bet_auto_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register",
+    "generate-report": "allure generate reports --clean -o reports/html",
+    "open-report": "allure open reports/html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmakeikin-sc/bet_auto_tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mmakeikin-sc/bet_auto_tests/issues"
+  },
+  "homepage": "https://github.com/mmakeikin-sc/bet_auto_tests#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1",
+    "allure-cucumberjs": "^3.2.1",
+    "allure-playwright": "^3.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
